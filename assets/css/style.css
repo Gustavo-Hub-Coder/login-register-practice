@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root {
+    --primary-color: rgb(1, 4, 31);
+    --primary-color-darker: hsl(244, 95%, 22%);
+    --primary-color-white: rgb(44, 13, 185);
+}
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'opens sans' , sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    font-weight: bold;
+}
+
+h1{
+    font-weight: 900;
+}
+
+p{
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 3%;
+    color: var(--primary-color-darker);
+}
+
+form label {
+    display: block;
+    border-radius: 100;
+    margin-bottom: 30px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+form input {
+    display: block;
+    border: none;
+    background: #eaeaeb;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+
+form input {
+    font-size: 24px;
+    height: 50%;
+    padding: 0 20px;
+}
+
+form input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+form button {
+    border: none;
+    background: var(--primary-color-darker);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+form button:hover {
+    background: var(--primary-color-white);
+}
+
+#delete-accounts-btn {
+    background-color: rgb(155, 9, 9);
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+#delete-accounts-btn:hover {
+    background-color: rgb(224, 6, 14);
+}
