@@ -5,7 +5,7 @@ const confirmPassword = document.querySelector("#input-confirm-password");
 const signUpBtn = document.querySelector("#signup-btn");
 const form = document.querySelector(".container");
 const deleteAccountsBtn = document.querySelector("#delete-accounts-btn");
-
+const res = document.querySelector("#res");
 //crear cuentas nuevas
 function createAccount() {
     const newUser = {
@@ -58,6 +58,8 @@ signUpBtn.addEventListener("click", function() {
     createAccount();
     clearInputs();
     alert("account created.")
+    res.innerHTML = "Account created"
+    res.style.display = "block";
 });
 
 deleteAccountsBtn.addEventListener('click', function() {

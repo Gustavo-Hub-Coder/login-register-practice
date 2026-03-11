@@ -27,6 +27,7 @@ loginBtn.addEventListener("click", function() {
     if (userValidate) {
         alert("login successful");
         //aqui puedo redirecionar para otra pagina
+        window.location.href = "../main.html"
     } else {
         alert("Invalid username or password");
     }

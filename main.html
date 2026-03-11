@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/style-dashboard.css">
+</head>
+<body>
+    <section class="container">
+        <h1>Home</h1>
+        <p>All features of the website.</p>
+
+
+
+    <section class="container">
+    <h1>Data e hora atual:</h1>
+    <h1 id="resultado"></h1>
+    </section>
+
+
+
+    <section class="container">
+       <h1>Lista de tarefas</h1>
+       <p>
+        <input type="text" class="input-nova-tarefa">
+        <button class="btn-add-tarefa">Adicionar nova tarefa</button>
+        </p>
+        
+       <ul class="tarefas"></ul>
+
+    </section>
+
+
+
+    <section class="container">
+        <h1>Calcule seu IMC</h1>
+
+        <form action="/paginaInicial" id="formulario">
+        <label for="peso">Peso:</label>
+        <input type="text" id="peso">
+
+        <label for="altura">Altura:</label>
+        <input type="text" id="altura">
+        <button>Enviar</button>
+        
+        <div id="resultado"></div>
+    </section>
+
+
+        <section class="container">
+        <h1>Meu timer</h1>
+        <p class="relogio">00:00:00</p>
+        <p>
+            <button class="iniciar">iniciar</button>
+            <button class="pausar">pausar</button>
+            <button class="zerar">zerar</button>
+        </p>
+    </section>
+    
+
+    </form>
+    </section>
+    <script src="./assets/js/dashboard.js"></script>
+</body>
+</html>
