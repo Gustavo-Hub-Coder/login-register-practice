@@ -6,6 +6,7 @@ const signUpBtn = document.querySelector("#signup-btn");
 const form = document.querySelector(".container");
 const deleteAccountsBtn = document.querySelector("#delete-accounts-btn");
 const res = document.querySelector("#res");
+const loginbtn = document.querySelector("#login");
 //crear cuentas nuevas
 function createAccount() {
     const newUser = {
@@ -51,6 +52,10 @@ function clearInputs() {
     confirmPassword.value = "";
 }
 
+const login = loginbtn.addEventListener("click", function() {
+    window.location.href = "../login.html"
+});
+
 //verificando si se captura los valores delos inputs
 //click de boton
 signUpBtn.addEventListener("click", function() {
@@ -58,8 +63,8 @@ signUpBtn.addEventListener("click", function() {
     createAccount();
     clearInputs();
     alert("account created.")
-    res.innerHTML = "Account created"
     res.style.display = "block";
+    res.innerHTML = "Account created"
 });
 
 deleteAccountsBtn.addEventListener('click', function() {
@@ -68,5 +73,6 @@ deleteAccountsBtn.addEventListener('click', function() {
     if (confirmDelete) {
         localStorage.removeItem("users");
         alert("All accounts were removed");
+        res.style.display = "none";
     }
 });

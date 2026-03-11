@@ -3,7 +3,11 @@ const password2 = document.querySelector("#input-password2");
 const loginBtn = document.querySelector("#login-btn");
 const form = document.querySelector(".container");
 const deleteAccountsBtn = document.querySelector("#delete-accounts-btn");
+const loginbtn = document.querySelector("#login");
 
+const login = loginbtn.addEventListener("click", function() {
+    window.location.href = "signup.html"
+});
 
 //Para prevenir el evento de enviar
 form.addEventListener('submit', function(event) {
